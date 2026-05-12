@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Military English Level 11 — Unit 3</title>
+  <meta name="description" content="Interactive Military English learning object. Study vocabulary, communicative functions and operational phraseology with speech-recognition practice.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- TOC Grid Background -->
+  <div class="bg-canvas" aria-hidden="true"></div>
+
+  <!-- App Shell -->
+  <div class="app-shell">
+
+    <!-- ═══ TOP NAVIGATION ═════════════════════════════ -->
+    <nav class="top-nav" role="navigation" aria-label="Main navigation">
+      <div class="nav-brand">
+        <i class="fas fa-crosshairs nav-anchor"></i>
+        <span class="brand-text">TOC Terminal // LEVEL 11</span>
+      </div>
+
+      <div class="nav-center">
+        <div class="mode-switcher" role="tablist" aria-label="Learning mode">
+          <button id="study-mode-btn" class="mode-btn active" data-mode="study"
+                  role="tab" aria-selected="true" aria-controls="study-section">
+            <i class="fas fa-book-open"></i><span>Study Feed</span>
+          </button>
+          <button id="practice-mode-btn" class="mode-btn" data-mode="practice"
+                  role="tab" aria-selected="false" aria-controls="practice-section">
+            <i class="fas fa-microphone-alt"></i><span>Combat Drills</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="nav-right">
+        <button id="stats-btn" class="btn-ghost" title="View Intelligence Report" aria-label="View Statistics">
+          <i class="fas fa-chart-pie"></i> Intel
+        </button>
+      </div>
+    </nav>
+
+    <!-- ═══ PAGE HEADER ════════════════════════════════ -->
+    <header class="page-header">
+      <h2>UNIT 3 // NATO Task Verbs & Mission Statements</h2>
+      <p class="header-sub">Tactical Vocabulary · ATP-112 Verbs · Mission Formula · Exercise Sector</p>
+    </header>
+
+    <!-- ═══ MAIN CONTENT ═══════════════════════════════ -->
+    <main class="main-content">
+
+      <!-- ── STUDY SECTION ──────────────────────────── -->
+      <section id="study-section" class="content-section active"
+               role="tabpanel" aria-labelledby="study-mode-btn">
+
+        <!-- Study Sub-Tab Bar -->
+        <div class="study-tabbar" role="tablist" aria-label="Study content section">
+          <button class="study-tab active" data-tab="vocab"
+                  role="tab" aria-selected="true" aria-controls="tab-vocab" id="stab-vocab">
+            <i class="fas fa-database"></i> Technical Vocabulary
+          </button>
+          <button class="study-tab" data-tab="func"
+                  role="tab" aria-selected="false" aria-controls="tab-func" id="stab-func">
+            <i class="fas fa-walkie-talkie"></i> Communicative Functions
+          </button>
+          <button class="study-tab" data-tab="formats"
+                  role="tab" aria-selected="false" aria-controls="tab-formats" id="stab-formats">
+            <i class="fas fa-file-alt"></i> Formats & Style Rules
+          </button>
+        </div>
+
+        <!-- Meta / controls bar -->
+        <div class="study-meta-bar">
+          <span id="progress-label" class="progress-label">Awaiting Data...</span>
+          <div class="meta-controls">
+            <button id="expand-all-btn" class="btn btn-ghost btn-sm">
+              <i class="fas fa-expand-alt"></i> Expand All
+            </button>
+            <button id="collapse-all-btn" class="btn btn-ghost btn-sm">
+              <i class="fas fa-compress-alt"></i> Collapse All
+            </button>
+          </div>
+        </div>
+
+        <!-- Tab Panels -->
+        <div id="tab-vocab" class="tab-panel active" role="tabpanel" aria-labelledby="stab-vocab"></div>
+        <div id="tab-func" class="tab-panel" role="tabpanel" aria-labelledby="stab-func">
+
+
+        <div class="info-box">
+            <strong>Assessment Criteria Covered:</strong> These exercises test your ability to (1) select the most precise NATO task verb based on tactical effect, (2) construct complete mission statements, (3) distinguish between similar verb pairs, (4) translate Spanish tactical intent into NATO English, and (5) use CONDUCT + activity appropriately. Complete all exercises to master the communicative functions of Unit 3.
+        </div>
+
+        <!-- ═══ EXERCISE 1 ═══ -->
+        <div class="accordion">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+                <div class="acc-icon-box"><i class="fas fa-crosshairs"></i></div>
+                <div class="acc-title-group">
+                    <div class="acc-title">Exercise 1: Tactical Task Verbs</div>
+                    <div class="acc-count">Select the Most Precise Task Verb</div>
+                </div>
+                <i class="fas fa-chevron-down acc-chevron"></i>
+            </div>
+            <div class="accordion-body">
+                <div class="accordion-inner">
+                    <div class="exercise-card exercise-unanswered" id="ex1-card">
+                        <div class="ex-instruction">Read each tactical scenario and select the <strong>most precise</strong> ATP-112 task verb. Consider the tactical effect described, not the first verb that comes to mind. Click an option to select it. Then click <strong>Check Answers</strong>.</div>
+
+                        <div class="ex-item" id="ex1-q1">
+                            <div class="ex-item-label">Question 1 of 6</div>
+                            <div class="ex-scenario">"Your unit must take control of a bridge by force before the enemy can destroy it. The bridge is currently held by enemy forces in prepared positions."</div>
+                            <div class="ex-options" data-question="1">
+                                <span class="ex-option" data-value="SECURE">SECURE</span>
+                                <span class="ex-option" data-value="SEIZE">SEIZE</span>
+                                <span class="ex-option" data-value="CAPTURE">CAPTURE</span>
+                                <span class="ex-option" data-value="OCCUPY">OCCUPY</span>
+                            </div>
+                        </div>
+
+                        <div class="ex-item" id="ex1-q2">
+                            <div class="ex-item-label">Question 2 of 6</div>
+                            <div class="ex-scenario">"Your unit must prevent the enemy from using a mountain pass for resupply operations. You do not need to physically occupy the pass — only ensure the enemy cannot use it."</div>
+                            <div class="ex-options" data-question="2">
+                                <span class="ex-option" data-value="BLOCK">BLOCK</span>
+                                <span class="ex-option" data-value="DENY">DENY</span>
+                                <span class="ex-option" data-value="SEIZE">SEIZE</span>
+                                <span class="ex-option" data-value="CONTAIN">CONTAIN</span>
+                            </div>
+                        </div>
+
+                        <div class="ex-item" id="ex1-q3">
+                            <div class="ex-item-label">Question 3 of 6</div>
+                            <div class="ex-scenario">"Enemy forces are in prepared defensive positions. Your task is to make them unable to continue resisting — this could be achieved by destroying them, neutralizing their command structure, or forcing their withdrawal."</div>
+                            <div class="ex-options" data-question="3">
+                                <span class="ex-option" data-value="DESTROY">DESTROY</span>
+                                <span class="ex-option" data-value="DEFEAT">DEFEAT</span>
+                                <span class="ex-option" data-value="NEUTRALIZE">NEUTRALIZE</span>
+                                <span class="ex-option" data-value="DISRUPT">DISRUPT</span>
+                            </div>
+                        </div>
+
+                        <div class="ex-item" id="ex1-q4">
+                            <div class="ex-item-label">Question 4 of 6</div>
+                            <div class="ex-scenario">"Your unit must eliminate all enemy presence from a village and confirm the area is free of hostile forces before the main body arrives."</div>
+                            <div class="ex-options" data-question="4">
+                                <span class="ex-option" data-value="SEIZE">SEIZE</span>
+                                <span class="ex-option" data-value="SECURE">SECURE</span>
+                                <span class="ex-option" data-value="CLEAR">CLEAR</span>
+                                <span class="ex-option" data-value="CAPTURE">CAPTURE</span>
+                            </div>
+                        </div>
+
+                        <div class="ex-item" id="ex1-q5">
+                            <div class="ex-item-label">Question 5 of 6</div>
+                            <div class="ex-scenario">"Your reconnaissance platoon must provide early warning of enemy approach from the eastern flank. They are to observe and report without becoming decisively engaged."</div>
+                            <div class="ex-options" data-question="5">
+                                <span class="ex-option" data-value="GUARD">GUARD</span>
+                                <span class="ex-option" data-value="COVER">COVER</span>
+                                <span class="ex-option" data-value="SCREEN">SCREEN</span>
+                                <span class="ex-option" data-value="DELAY">DELAY</span>
+                            </div>
+                        </div>
+
+                        <div class="ex-item" id="ex1-q6">
+                            <div class="ex-item-label">Question 6 of 6</div>
+                            <div class="ex-scenario">"Your artillery must temporarily silence enemy air defense systems for the duration of the air assault — approximately 4 hours. After that, the systems may become operational again."</div>
+                            <div class="ex-options" data-question="6">
+                                <span class="ex-option" data-value="DESTROY">DESTROY</span>
+                                <span class="ex-option" data-value="NEUTRALIZE">NEUTRALIZE</span>
+                                <span class="ex-option" data-value="DISRUPT">DISRUPT</span>
+                                <span class="ex-option" data-value="DEFEAT">DEFEAT</span>
+                            </div>
+                        </div>
+
+                        <div class="ex-feedback" id="ex1-feedback"></div>
+                        <div class="btn-row">
+                            <button class="btn-check" onclick="checkExercise1()">Check Answers</button>
+                            <button class="btn-reset" onclick="resetExercise1()">Reset</button>
+                            <button class="btn-show" onclick="showExercise1Answers()">Show Answers</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-footer">
+                    <span style="font-size:0.75rem; color:var(--on-surface-variant); text-transform:uppercase;">Mark section verified:</span>
+                    <input type="checkbox" class="know-cb" id="ex1-cb" onchange="toggleItem('ex1', this.checked)">
+                </div>
+            </div>
+        </div>
+
+        <!-- ═══ EXERCISE 2 ═══ -->
+        <div class="accordion">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+                <div class="acc-icon-box"><i class="fas fa-edit"></i></div>
+                <div class="acc-title-group">
+                    <div class="acc-title">Exercise 2: Mission Statement Builder</div>
+                    <div class="acc-count">Construct Complete Mission Statements</div>
+                </div>
+                <i class="fas fa-chevron-down acc-chevron"></i>
+            </div>
+            <div class="accordion-body">
+                <div class="accordion-inner">
+                    <div class="exercise-card exercise-unanswered" id="ex2-card">
+                        <div class="ex-instruction">Complete each mission statement by selecting the correct elements from the dropdowns. Each statement must follow the formula: <span class="inline-code">[WHO] is to [TASK VERB] [OBJECT/LOCATION] IOT [PURPOSE]</span>.</div>
+
+                        <div class="ex-item" id="ex2-q1">
+                            <div class="ex-item-label">Question 1 of 4</div>
+                            <div class="ex-scenario">A Company must take Hill 247 by force in order to allow the battalion main body to advance along Axis Sierra.</div>
+                            <div style="font-family:'Courier New',monospace;font-size:13px;line-height:2;margin-top:6px;">
+                                <select class="ex-select" data-question="2-1" data-field="who">
+                                    <option value="">-- WHO --</option>
+                                    <option value="A COY">A COY</option>
+                                    <option value="1 BN">1 BN</option>
+                                    <option value="RECCE PL">RECCE PL</option>
+                                </select>
+                                is to
+                                <select class="ex-select" data-question="2-1" data-field="verb">
+                                    <option value="">-- TASK VERB --</option>
+                                    <option value="SECURE">SECURE</option>
+                                    <option value="SEIZE">SEIZE</option>
+                                    <option value="CLEAR">CLEAR</option>
+                                    <option value="OCCUPY">OCCUPY</option>
+                                </select>
+                                <select class="ex-select" data-question="2-1" data-field="object">
+                                    <option value="">-- OBJECT/LOCATION --</option>
+                                    <option value="HILL 247">HILL 247</option>
+                                    <option value="AXIS SIERRA">AXIS SIERRA</option>
+                                    <option value="THE VALLEY">THE VALLEY</option>
+                                </select>
+                                IOT
+                                <select class="ex-select" data-question="2-1" data-field="purpose">
+                                    <option value="">-- PURPOSE --</option>
+                                    <option value="allow the battalion main body to advance along AXIS SIERRA">allow the battalion main body to advance along AXIS SIERRA</option>
+                                    <option value="prevent En use of the high ground">prevent En use of the high ground</option>
+                                    <option value="set conditions for the defence">set conditions for the defence</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="ex-item" id="ex2-q2">
+                            <div class="ex-item-label">Question 2 of 4</div>
+                            <div class="ex-scenario">B Company must prevent the enemy from using Eagle Bridge as an escape route, in order to set conditions for the encirclement of enemy forces in Grid Square 4578.</div>
+                            <div style="font-family:'Courier New',monospace;font-size:13px;line-height:2;margin-top:6px;">
+                                <select class="ex-select" data-question="2-2" data-field="who">
+                                    <option value="">-- WHO --</option>
+                                    <option value="B COY">B COY</option>
+                                    <option value="C COY">C COY</option>
+                                    <option value="1 PL">1 PL</option>
+                                </select>
+                                is to
+                                <select class="ex-select" data-question="2-2" data-field="verb">
+                                    <option value="">-- TASK VERB --</option>
+                                    <option value="BLOCK">BLOCK</option>
+                                    <option value="SEIZE">SEIZE</option>
+                                    <option value="DENY">DENY</option>
+                                    <option value="DESTROY">DESTROY</option>
+                                </select>
+                                <select class="ex-select" data-question="2-2" data-field="object">
+                                    <option value="">-- OBJECT/LOCATION --</option>
+                                    <option value="EAGLE BRIDGE">EAGLE BRIDGE</option>
+                                    <option value="GRID SQUARE 4578">GRID SQUARE 4578</option>
+                                    <option value="THE ESCAPE ROUTE">THE ESCAPE ROUTE</option>
+                                </select>
+                                IOT
+                                <select class="ex-select" data-question="2-2" data-field="purpose">
+                                    <option value="">-- PURPOSE --</option>
+                                    <option value="set conditions for the encirclement of En forces in GRID SQUARE 4578">set conditions for the encirclement of En forces in GRID SQUARE 4578</option>
+                                    <option value="allow FF crossing of the river">allow FF crossing of the river</option>
+                                    <option value="prevent En reinforcement from the south">prevent En reinforcement from the south</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="ex-item" id="ex2-q3">
+                            <div class="ex-item-label">Question 3 of 4</div>
+                            <div class="ex-scenario">The reconnaissance platoon must observe the eastern approach and provide early warning without becoming engaged, in order to protect the main body's flank during movement.</div>
+                            <div style="font-family:'Courier New',monospace;font-size:13px;line-height:2;margin-top:6px;">
+                                <select class="ex-select" data-question="2-3" data-field="who">
+                                    <option value="">-- WHO --</option>
+                                    <option value="RECCE PL">RECCE PL</option>
+                                    <option value="1 PL">1 PL</option>
+                                    <option value="SP COY">SP COY</option>
+                                </select>
+                                is to
+                                <select class="ex-select" data-question="2-3" data-field="verb">
+                                    <option value="">-- TASK VERB --</option>
+                                    <option value="GUARD">GUARD</option>
+                                    <option value="SCREEN">SCREEN</option>
+                                    <option value="COVER">COVER</option>
+                                    <option value="DELAY">DELAY</option>
+                                </select>
+                                <select class="ex-select" data-question="2-3" data-field="object">
+                                    <option value="">-- OBJECT/LOCATION --</option>
+                                    <option value="the eastern approach">the eastern approach</option>
+                                    <option value="the main body's flank">the main body's flank</option>
+                                    <option value="the valley">the valley</option>
+                                </select>
+                                IOT
+                                <select class="ex-select" data-question="2-3" data-field="purpose">
+                                    <option value="">-- PURPOSE --</option>
+                                    <option value="protect the main body's flank during movement">protect the main body's flank during movement</option>
+                                    <option value="destroy En reconnaissance elements">destroy En reconnaissance elements</option>
+                                    <option value="delay En advance">delay En advance</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="ex-item" id="ex2-q4">
+                            <div class="ex-item-label">Question 4 of 4</div>
+                            <div class="ex-scenario">3 Platoon must physically damage the enemy communications node at Grid 456789 so it can never function again, in order to degrade enemy command and control capability.</div>
+                            <div style="font-family:'Courier New',monospace;font-size:13px;line-height:2;margin-top:6px;">
+                                <select class="ex-select" data-question="2-4" data-field="who">
+                                    <option value="">-- WHO --</option>
+                                    <option value="3 PL">3 PL</option>
+                                    <option value="C COY">C COY</option>
+                                    <option value="ENGR SEC">ENGR SEC</option>
+                                </select>
+                                is to
+                                <select class="ex-select" data-question="2-4" data-field="verb">
+                                    <option value="">-- TASK VERB --</option>
+                                    <option value="NEUTRALIZE">NEUTRALIZE</option>
+                                    <option value="DESTROY">DESTROY</option>
+                                    <option value="DISRUPT">DISRUPT</option>
+                                    <option value="DEFEAT">DEFEAT</option>
+                                </select>
+                                <select class="ex-select" data-question="2-4" data-field="object">
+                                    <option value="">-- OBJECT/LOCATION --</option>
+                                    <option value="the En communications node IVO GRID 456789">the En communications node IVO GRID 456789</option>
+                                    <option value="GRID 456789">GRID 456789</option>
+                                    <option value="En command and control">En command and control</option>
+                                </select>
+                                IOT
+                                <select class="ex-select" data-question="2-4" data-field="purpose">
+                                    <option value="">-- PURPOSE --</option>
+                                    <option value="degrade En command and control capability">degrade En command and control capability</option>
+                                    <option value="allow FF advance">allow FF advance</option>
+                                    <option value="set conditions for the assault">set conditions for the assault</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="ex-feedback" id="ex2-feedback"></div>
+                        <div class="btn-row">
+                            <button class="btn-check" onclick="checkExercise2()">Check Answers</button>
+                            <button class="btn-reset" onclick="resetExercise2()">Reset</button>
+                            <button class="btn-show" onclick="showExercise2Answers()">Show Answers</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-footer">
+                    <span style="font-size:0.75rem; color:var(--on-surface-variant); text-transform:uppercase;">Mark section verified:</span>
+                    <input type="checkbox" class="know-cb" id="ex2-cb" onchange="toggleItem('ex2', this.checked)">
+                </div>
+            </div>
+        </div>
+
+        <!-- ═══ EXERCISE 3 ═══ -->
+        <div class="accordion">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+                <div class="acc-icon-box"><i class="fas fa-layer-group"></i></div>
+                <div class="acc-title-group">
+                    <div class="acc-title">Exercise 3: Distinguish Verb Pairs</div>
+                    <div class="acc-count">Analyze Subtle Distinctions in Tactical Effect</div>
+                </div>
+                <i class="fas fa-chevron-down acc-chevron"></i>
+            </div>
+            <div class="accordion-body">
+                <div class="accordion-inner">
+                    <div class="exercise-card exercise-unanswered" id="ex3-card">
+                        <div class="ex-instruction">For each scenario, <strong>two similar verbs</strong> are offered. Select the correct one based on the precise ATP-112 definitions. Pay attention to the subtle distinctions in tactical effect.</div>
+
+                        <div class="ex-item" id="ex3-q1">
+                            <div class="ex-item-label">Pair: SECURE vs SEIZE</div>
+                            <div class="ex-scenario">"Your unit must gain control of an ammunition depot to prevent its destruction by retreating enemy forces. The depot is currently unoccupied but has been rigged with explosives."</div>
+                            <div class="ex-options" data-question="3-1">
+                                <span class="ex-option" data-value="SECURE">SECURE — prevent use/destruction</span>
+                                <span class="ex-option" data-value="SEIZE">SEIZE — take by force</span>
+                            </div>
+                        </div>
+                        <div class="ex-item" id="ex3-q2">
+                            <div class="ex-item-label">Pair: BLOCK vs DENY vs FIX</div>
+                            <div class="ex-scenario">"Your unit must prevent the enemy reserve force from moving south along ROUTE TANGO to reinforce their positions. You are to engage them if they attempt to move, but your main purpose is to stop movement along this specific route."</div>
+                            <div class="ex-options" data-question="3-2">
+                                <span class="ex-option" data-value="BLOCK">BLOCK — stop movement along a route</span>
+                                <span class="ex-option" data-value="DENY">DENY — prevent use of an area</span>
+                                <span class="ex-option" data-value="FIX">FIX — prevent all movement</span>
+                            </div>
+                        </div>
+                        <div class="ex-item" id="ex3-q3">
+                            <div class="ex-item-label">Pair: CONTAIN vs ISOLATE</div>
+                            <div class="ex-scenario">"Your unit must prevent the enemy platoon in the northern sector from withdrawing to join their main body. You do not need to destroy them — only ensure they cannot leave their current area of operations."</div>
+                            <div class="ex-options" data-question="3-3">
+                                <span class="ex-option" data-value="CONTAIN">CONTAIN — stop withdrawal/maneuver</span>
+                                <span class="ex-option" data-value="ISOLATE">ISOLATE — separate from support</span>
+                            </div>
+                        </div>
+                        <div class="ex-item" id="ex3-q4">
+                            <div class="ex-item-label">Pair: DISRUPT vs DELAY</div>
+                            <div class="ex-scenario">"Your unit must slow the enemy advance through the valley without becoming decisively engaged, trading space for time over a 6-hour period while the main body consolidates."</div>
+                            <div class="ex-options" data-question="3-4">
+                                <span class="ex-option" data-value="DISRUPT">DISRUPT — break up temporarily</span>
+                                <span class="ex-option" data-value="DELAY">DELAY — slow advance, trade space for time</span>
+                            </div>
+                        </div>
+                        <div class="ex-item" id="ex3-q5">
+                            <div class="ex-item-label">Pair: DEFEAT vs DESTROY</div>
+                            <div class="ex-scenario">"Your battalion must engage the enemy brigade in the southern sector and make them unable to continue resisting — this may involve destroying key units, forcing their withdrawal, or breaking their cohesion."</div>
+                            <div class="ex-options" data-question="3-5">
+                                <span class="ex-option" data-value="DEFEAT">DEFEAT — render unable/unwilling to resist</span>
+                                <span class="ex-option" data-value="DESTROY">DESTROY — render physically incapable of function</span>
+                            </div>
+                        </div>
+
+                        <div class="ex-feedback" id="ex3-feedback"></div>
+                        <div class="btn-row">
+                            <button class="btn-check" onclick="checkExercise3()">Check Answers</button>
+                            <button class="btn-reset" onclick="resetExercise3()">Reset</button>
+                            <button class="btn-show" onclick="showExercise3Answers()">Show Answers</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-footer">
+                    <span style="font-size:0.75rem; color:var(--on-surface-variant); text-transform:uppercase;">Mark section verified:</span>
+                    <input type="checkbox" class="know-cb" id="ex3-cb" onchange="toggleItem('ex3', this.checked)">
+                </div>
+            </div>
+        </div>
+
+        <!-- ═══ EXERCISE 4 ═══ -->
+        <div class="accordion">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+                <div class="acc-icon-box"><i class="fas fa-language"></i></div>
+                <div class="acc-title-group">
+                    <div class="acc-title">Exercise 4: Spanish to English Tactical Translation</div>
+                    <div class="acc-count">Analyze Tactical Intent and Select Correct Phrasing</div>
+                </div>
+                <i class="fas fa-chevron-down acc-chevron"></i>
+            </div>
+            <div class="accordion-body">
+                <div class="accordion-inner">
+                    <div class="exercise-card exercise-unanswered" id="ex4-card">
+                        <div class="ex-instruction">Read the Spanish tactical intention. <strong>Do not translate literally.</strong> First, identify the correct tactical effect, then select the appropriate ATP-112 task verb. Finally, select the correctly constructed mission statement in NATO English.</div>
+
+                        <div class="ex-item" id="ex4-q1">
+                            <div class="ex-item-label">Question 1 of 4</div>
+                            <div class="ex-scenario"><strong>Intención táctica (ES):</strong> "La Compañía B debe tomar por la fuerza el Puente Águila para evitar que el enemigo lo use como ruta de escape."<br><br>
+                                <em>Step 1: Identify the tactical effect → "tomar por la fuerza" means to take possession by force from enemy control.</em></div>
+                            <div style="margin-top:6px;">
+                                <span style="font-size:12px;color:#888;">Select the correct ATP-112 verb:</span>
+                                <select class="ex-select" data-question="4-1" data-field="verb">
+                                    <option value="">-- TASK VERB --</option>
+                                    <option value="CAPTURE">CAPTURE</option>
+                                    <option value="SEIZE">SEIZE</option>
+                                    <option value="SECURE">SECURE</option>
+                                    <option value="OCCUPY">OCCUPY</option>
+                                </select>
+                            </div>
+                            <div style="margin-top:8px;">
+                                <span style="font-size:12px;color:#888;">Now select the correct complete mission statement:</span>
+                                <div class="ex-options" data-question="4-1b">
+                                    <span class="ex-option" data-value="B COY is to SEIZE EAGLE BRIDGE IOT prevent En use as an escape route.">B COY is to SEIZE EAGLE BRIDGE IOT prevent En use as an escape route.</span>
+                                    <span class="ex-option" data-value="B COY is to CAPTURE EAGLE BRIDGE IOT prevent En use as an escape route.">B COY is to CAPTURE EAGLE BRIDGE IOT prevent En use as an escape route.</span>
+                                    <span class="ex-option" data-value="B COY is to SECURE EAGLE BRIDGE IOT prevent En use as an escape route.">B COY is to SECURE EAGLE BRIDGE IOT prevent En use as an escape route.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ex-item" id="ex4-q2">
+                            <div class="ex-item-label">Question 2 of 4</div>
+                            <div class="ex-scenario"><strong>Intención táctica (ES):</strong> "El pelotón de reconocimiento debe vigilar el flanco este y proporcionar alerta temprana sin entrar en combate decisivo, para proteger el avance de la fuerza principal."<br><br>
+                                <em>Step 1: Identify the tactical effect → "vigilar y proporcionar alerta temprana sin combate decisivo" = early warning through surveillance.</em></div>
+                            <div style="margin-top:6px;">
+                                <span style="font-size:12px;color:#888;">Select the correct ATP-112 verb:</span>
+                                <select class="ex-select" data-question="4-2" data-field="verb">
+                                    <option value="">-- TASK VERB --</option>
+                                    <option value="GUARD">GUARD</option>
+                                    <option value="COVER">COVER</option>
+                                    <option value="SCREEN">SCREEN</option>
+                                    <option value="DELAY">DELAY</option>
+                                </select>
+                            </div>
+                            <div style="margin-top:8px;">
+                                <span style="font-size:12px;color:#888;">Now select the correct complete mission statement:</span>
+                                <div class="ex-options" data-question="4-2b">
+                                    <span class="ex-option" data-value="RECCE PL is to GUARD the eastern flank IOT protect the main body's advance.">RECCE PL is to GUARD the eastern flank IOT protect the main body's advance.</span>
+                                    <span class="ex-option" data-value="RECCE PL is to SCREEN the eastern flank IOT provide early warning and protect the main body's advance.">RECCE PL is to SCREEN the eastern flank IOT provide early warning and protect the main body's advance.</span>
+                                    <span class="ex-option" data-value="RECCE PL is to COVER the eastern flank IOT protect the main body's advance.">RECCE PL is to COVER the eastern flank IOT protect the main body's advance.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ex-item" id="ex4-q3">
+                            <div class="ex-item-label">Question 3 of 4</div>
+                            <div class="ex-scenario"><strong>Intención táctica (ES):</strong> "La Compañía C debe impedir que el enemigo use el paso de montaña para reabastecimiento. No es necesario ocupar físicamente el paso."<br><br>
+                                <em>Step 1: Identify the tactical effect → "impedir el uso de un área sin necesidad de ocuparla" = deny use of an area/route.</em></div>
+                            <div style="margin-top:6px;">
+                                <span style="font-size:12px;color:#888;">Select the correct ATP-112 verb:</span>
+                                <select class="ex-select" data-question="4-3" data-field="verb">
+                                    <option value="">-- TASK VERB --</option>
+                                    <option value="BLOCK">BLOCK</option>
+                                    <option value="DENY">DENY</option>
+                                    <option value="SEIZE">SEIZE</option>
+                                    <option value="CONTAIN">CONTAIN</option>
+                                </select>
+                            </div>
+                            <div style="margin-top:8px;">
+                                <span style="font-size:12px;color:#888;">Now select the correct complete mission statement:</span>
+                                <div class="ex-options" data-question="4-3b">
+                                    <span class="ex-option" data-value="C COY is to BLOCK the mountain pass IOT prevent En resupply operations.">C COY is to BLOCK the mountain pass IOT prevent En resupply operations.</span>
+                                    <span class="ex-option" data-value="C COY is to DENY the mountain pass IOT prevent En resupply operations.">C COY is to DENY the mountain pass IOT prevent En resupply operations.</span>
+                                    <span class="ex-option" data-value="C COY is to SEIZE the mountain pass IOT prevent En resupply operations.">C COY is to SEIZE the mountain pass IOT prevent En resupply operations.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ex-item" id="ex4-q4">
+                            <div class="ex-item-label">Question 4 of 4</div>
+                            <div class="ex-scenario"><strong>Intención táctica (ES):</strong> "El batallón debe hacer que las fuerzas enemigas en el sector norte sean incapaces de resistir, ya sea destruyéndolas parcialmente o forzando su retirada, para permitir libertad de maniobra a las fuerzas amigas."<br><br>
+                                <em>Step 1: Identify the tactical effect → "incapaces de resistir mediante destrucción parcial o retirada forzada" = render unable or unwilling to resist (broader than just destroy).</em></div>
+                            <div style="margin-top:6px;">
+                                <span style="font-size:12px;color:#888;">Select the correct ATP-112 verb:</span>
+                                <select class="ex-select" data-question="4-4" data-field="verb">
+                                    <option value="">-- TASK VERB --</option>
+                                    <option value="DESTROY">DESTROY</option>
+                                    <option value="DEFEAT">DEFEAT</option>
+                                    <option value="NEUTRALIZE">NEUTRALIZE</option>
+                                    <option value="DISRUPT">DISRUPT</option>
+                                </select>
+                            </div>
+                            <div style="margin-top:8px;">
+                                <span style="font-size:12px;color:#888;">Now select the correct complete mission statement:</span>
+                                <div class="ex-options" data-question="4-4b">
+                                    <span class="ex-option" data-value="3 BN is to DESTROY En forces in the northern sector IOT allow FF freedom of maneuver.">3 BN is to DESTROY En forces in the northern sector IOT allow FF freedom of maneuver.</span>
+                                    <span class="ex-option" data-value="3 BN is to DEFEAT En forces in the northern sector IOT allow FF freedom of maneuver.">3 BN is to DEFEAT En forces in the northern sector IOT allow FF freedom of maneuver.</span>
+                                    <span class="ex-option" data-value="3 BN is to NEUTRALIZE En forces in the northern sector IOT allow FF freedom of maneuver.">3 BN is to NEUTRALIZE En forces in the northern sector IOT allow FF freedom of maneuver.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ex-feedback" id="ex4-feedback"></div>
+                        <div class="btn-row">
+                            <button class="btn-check" onclick="checkExercise4()">Check Answers</button>
+                            <button class="btn-reset" onclick="resetExercise4()">Reset</button>
+                            <button class="btn-show" onclick="showExercise4Answers()">Show Answers</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-footer">
+                    <span style="font-size:0.75rem; color:var(--on-surface-variant); text-transform:uppercase;">Mark section verified:</span>
+                    <input type="checkbox" class="know-cb" id="ex4-cb" onchange="toggleItem('ex4', this.checked)">
+                </div>
+            </div>
+        </div>
+
+        <!-- ═══ EXERCISE 5 ═══ -->
+        <div class="accordion">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+                <div class="acc-icon-box"><i class="fas fa-list-check"></i></div>
+                <div class="acc-title-group">
+                    <div class="acc-title">Exercise 5: CONDUCT + Activity</div>
+                    <div class="acc-count">Determining When a Direct NATO Verb Exists</div>
+                </div>
+                <i class="fas fa-chevron-down acc-chevron"></i>
+            </div>
+            <div class="accordion-body">
+                <div class="accordion-inner">
+                    <div class="exercise-card exercise-unanswered" id="ex5-card">
+                        <div class="ex-instruction">For each scenario, decide whether a <strong>direct ATP-112 task verb exists</strong> or whether you must use <span class="inline-code">CONDUCT + [activity]</span>. Select the correct option.</div>
+
+                        <div class="ex-item" id="ex5-q1">
+                            <div class="ex-item-label">Question 1 of 5</div>
+                            <div class="ex-scenario">"Your unit must carry out information operations to influence the perception of the local population in the area of operations."</div>
+                            <div class="ex-options" data-question="5-1">
+                                <span class="ex-option" data-value="CONDUCT">CONDUCT INFO OPS — no direct NATO verb exists</span>
+                                <span class="ex-option" data-value="DIRECT">Use a direct NATO verb (e.g., INFLUENCE)</span>
+                            </div>
+                        </div>
+                        <div class="ex-item" id="ex5-q2">
+                            <div class="ex-item-label">Question 2 of 5</div>
+                            <div class="ex-scenario">"Your unit must search for and rescue a downed pilot behind enemy lines."</div>
+                            <div class="ex-options" data-question="5-2">
+                                <span class="ex-option" data-value="CONDUCT">CONDUCT SAR — specific operation type without single NATO verb</span>
+                                <span class="ex-option" data-value="DIRECT">Use RECOVER — a direct NATO verb covers this</span>
+                            </div>
+                        </div>
+                        <div class="ex-item" id="ex5-q3">
+                            <div class="ex-item-label">Question 3 of 5</div>
+                            <div class="ex-scenario">"Your unit must take control of Hill 389 by force from enemy forces currently occupying it."</div>
+                            <div class="ex-options" data-question="5-3">
+                                <span class="ex-option" data-value="DIRECT">SEIZE — a direct NATO verb exists for this tactical effect</span>
+                                <span class="ex-option" data-value="CONDUCT">CONDUCT SEIZURE — no direct NATO verb exists</span>
+                            </div>
+                        </div>
+                        <div class="ex-item" id="ex5-q4">
+                            <div class="ex-item-label">Question 4 of 5</div>
+                            <div class="ex-scenario">"Your unit must carry out civil-military cooperation tasks to build relationships with village leaders in the area of operations."</div>
+                            <div class="ex-options" data-question="5-4">
+                                <span class="ex-option" data-value="CONDUCT">CONDUCT CIMIC TASKS — no direct NATO verb exists</span>
+                                <span class="ex-option" data-value="DIRECT">Use a direct NATO verb (e.g., ENGAGE)</span>
+                            </div>
+                        </div>
+                        <div class="ex-item" id="ex5-q5">
+                            <div class="ex-item-label">Question 5 of 5</div>
+                            <div class="ex-scenario">"Your unit must establish a security cordon around the village to prevent anyone from entering or leaving during the operation."</div>
+                            <div class="ex-options" data-question="5-5">
+                                <span class="ex-option" data-value="CONDUCT">CONDUCT CORDON — combination of CONTAIN and SCREEN without a single NATO verb</span>
+                                <span class="ex-option" data-value="DIRECT">CONTAIN — a direct NATO verb covers this completely</span>
+                            </div>
+                        </div>
+
+                        <div class="ex-feedback" id="ex5-feedback"></div>
+                        <div class="btn-row">
+                            <button class="btn-check" onclick="checkExercise5()">Check Answers</button>
+                            <button class="btn-reset" onclick="resetExercise5()">Reset</button>
+                            <button class="btn-show" onclick="showExercise5Answers()">Show Answers</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-footer">
+                    <span style="font-size:0.75rem; color:var(--on-surface-variant); text-transform:uppercase;">Mark section verified:</span>
+                    <input type="checkbox" class="know-cb" id="ex5-cb" onchange="toggleItem('ex5', this.checked)">
+                </div>
+            </div>
+        </div>
+
+        </div><!-- /tab-func -->
+
+        <div id="tab-formats" class="tab-panel" role="tabpanel" aria-labelledby="stab-formats">
+
+        <div class="info-box">
+            Reference section based on ATP-112 (2020) and STANAG 2014 Ed9. Use these rules when writing or evaluating operational orders and mission statements. All task verbs must be selected based on <strong>tactical effect</strong>, not translated directly from another language.
+        </div>
+
+        <!-- Accordion 1: Mission Statement Formula -->
+        <div class="accordion">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            <div class="acc-icon-box"><i class="fas fa-bullseye"></i></div>
+            <div class="acc-title-group">
+              <div class="acc-title">Mission Statement — Formula &amp; Checklist</div>
+              <div class="acc-count">ATP-112 / STANAG 2014</div>
+            </div>
+            <i class="fas fa-chevron-down acc-chevron"></i>
+          </div>
+          <div class="accordion-body"><div class="accordion-inner">
+            <div class="rule-card rule-mission">
+              <div class="rule-phrase">MISSION STATEMENT FORMULA:
+
+                [UNIT] is to / are to [TASK VERB] [OBJECT + LOCATION]
+                [TIMING — when applicable]
+                IOT [PURPOSE / DESIRED EFFECT]
+
+                EXAMPLE:
+                C COY is to DENY EAGLE BRIDGE
+                NLT H+1
+                IOT set conditions for the denial
+                of INS LLoC through GZ.
+
+                ——————————————————————————————
+                CHECKLIST — all 5 elements must be present:
+                ✓ WHO — the unit assigned the task
+                ✓ WHAT — the ATP-112 TASK VERB (in capitals)
+                ✓ WHERE — the object and its location
+                ✓ WHEN — timing (may be implied by H-Hour)
+                ✓ WHY — IOT + purpose/effect
+
+                HARD RULES:
+                • One sentence only — never two
+                • One task verb only
+                • No "and" connecting two tasks
+                • Task verb in CAPITALS
+                • IOT connects task to purpose
+                • Obligation: is to / are to (not should/could/shall)</div>
+              <div class="rule-type">Mission Statement — ATP-112 / STANAG 2014</div>
+              <div class="rule-note">The IOT clause is not optional. A mission without a purpose is incomplete. The purpose explains <em>why</em> the task matters — it gives subordinates the context to act independently if the situation changes.</div>
+            </div>
+          </div>
+          <div class="accordion-footer">
+            <span style="font-size:0.75rem; color:var(--on-surface-variant); text-transform:uppercase;">Mark section verified:</span>
+            <input type="checkbox" class="know-cb" id="fmt-g1-cb" onchange="toggleItem('fmt-g1', this.checked)">
+          </div></div>
+        </div>
+
+        <!-- Accordion 2: Verb Selection -->
+        <div class="accordion">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            <div class="acc-icon-box"><i class="fas fa-crosshairs"></i></div>
+            <div class="acc-title-group">
+              <div class="acc-title">Verb Selection — Choosing the Correct Task Verb</div>
+              <div class="acc-count">ATP-112 Protocol</div>
+            </div>
+            <i class="fas fa-chevron-down acc-chevron"></i>
+          </div>
+          <div class="accordion-body"><div class="accordion-inner">
+            <div class="rule-card rule-verb">
+              <div class="rule-phrase">VERB SELECTION PROCESS:
+
+                Step 1: Identify the TACTICAL EFFECT required.
+                • Do you need to take terrain? → SEIZE
+                • Do you need to protect terrain? → SECURE
+                • Do you need to eliminate all enemy? → CLEAR
+                • Do you need to stop movement on a route? → BLOCK
+                • Do you need to prevent use of an area? → DENY
+                • Do you need permanent physical damage? → DESTROY
+                • Do you need temporary incapacity? → NEUTRALIZE
+                • Do you need to break enemy will? → DEFEAT
+
+                Step 2: Check the PRECISE ATP-112 definition.
+                Never assume. Verify. Similar verbs have
+                distinct legal/tactical meanings.
+
+                Step 3: If no NATO verb matches the effect,
+                use CONDUCT + [activity name].
+
+                ——————————————————————————————
+                COMMON ERRORS:
+
+                ✗ Translating directly from another language
+                (Spanish "tomar" → "take" ✗ → SEIZE ✓)
+
+                ✗ Using a generic verb when a precise one exists
+                ("get control of" ✗ → SEIZE or SECURE ✓)
+
+                ✗ Confusing temporary vs permanent effects
+                (DESTROY for a 2-hour suppression ✗ → NEUTRALIZE ✓)
+
+                ✗ Using CONDUCT when a NATO verb exists
+                (CONDUCT SEIZURE ✗ → SEIZE ✓)</div>
+              <div class="rule-type">Verb Selection Protocol — ATP-112</div>
+              <div class="rule-note">The most frequent error in NATO order-writing examinations is verb imprecision. An examiner will mark down any use of a non-NATO verb when an ATP-112 verb exists, or the use of an ATP-112 verb that does not match the described tactical effect.</div>
+            </div>
+          </div>
+          <div class="accordion-footer">
+            <span style="font-size:0.75rem; color:var(--on-surface-variant); text-transform:uppercase;">Mark section verified:</span>
+            <input type="checkbox" class="know-cb" id="fmt-g2-cb" onchange="toggleItem('fmt-g2', this.checked)">
+          </div></div>
+        </div>
+
+        <!-- Accordion 3: Verb Differentiation -->
+        <div class="accordion">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            <div class="acc-icon-box"><i class="fas fa-not-equal"></i></div>
+            <div class="acc-title-group">
+              <div class="acc-title">Verb Differentiation — Critical Pairs Quick Reference</div>
+              <div class="acc-count">6 critical pairs</div>
+            </div>
+            <i class="fas fa-chevron-down acc-chevron"></i>
+          </div>
+          <div class="accordion-body"><div class="accordion-inner">
+            <div class="rule-card rule-diff">
+              <div class="rule-phrase">CRITICAL DISTINCTIONS — MEMORIZE THESE:
+
+                DEFEAT vs DESTROY
+                DEFEAT = enemy unable/unwilling to resist (broad)
+                DESTROY = target physically incapable of function (narrow)
+                → "DEFEAT the enemy force; DESTROY the radar installation."
+
+                SECURE vs SEIZE
+                SECURE = gain control to PREVENT use or destruction
+                SEIZE = take possession BY FORCE from enemy control
+                → "SECURE the unoccupied depot; SEIZE the defended bridge."
+
+                BLOCK vs DENY vs FIX
+                BLOCK = stop movement along a SPECIFIC ROUTE
+                DENY = prevent USE of an area or facility (broader)
+                FIX = prevent enemy from MOVING AT ALL from position
+                → "BLOCK Route Tango; DENY the bridge; FIX the enemy platoon."
+
+                NEUTRALIZE vs DISRUPT
+                NEUTRALIZE = temporarily INCAPABLE (hours, complete)
+                DISRUPT = temporarily INEFFECTIVE (minutes, partial)
+                → "NEUTRALIZE air defenses for the assault; DISRUPT reinforcements."
+
+                CONTAIN vs ISOLATE
+                CONTAIN = stop WITHDRAWAL or MANEUVER beyond area
+                ISOLATE = SEPARATE from support (supplies, reinforcements)
+                → "CONTAIN them in the pocket; ISOLATE them from their logistics."
+
+                SCREEN vs GUARD vs COVER
+                SCREEN = EARLY WARNING only — observe, report
+                GUARD = PROTECT against attack — can engage
+                COVER = stand BETWEEN enemy and protected force
+                → "SCREEN the flank; GUARD the convoy; COVER the withdrawal."</div>
+              <div class="rule-type">Verb Differentiation — ATP-112 Definitions</div>
+              <div class="rule-note">These six pairs represent the most commonly confused verbs in NATO orders. In an examination, you will be tested on at least three of these distinctions. Learn the memory aids.</div>
+            </div>
+          </div>
+          <div class="accordion-footer">
+            <span style="font-size:0.75rem; color:var(--on-surface-variant); text-transform:uppercase;">Mark section verified:</span>
+            <input type="checkbox" class="know-cb" id="fmt-g3-cb" onchange="toggleItem('fmt-g3', this.checked)">
+          </div></div>
+        </div>
+
+        <!-- Accordion 4: CONDUCT + Activity & Common Errors -->
+        <div class="accordion">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            <div class="acc-icon-box"><i class="fas fa-tasks"></i></div>
+            <div class="acc-title-group">
+              <div class="acc-title">CONDUCT + Activity &amp; Common Errors</div>
+              <div class="acc-count">Rules &amp; corrections</div>
+            </div>
+            <i class="fas fa-chevron-down acc-chevron"></i>
+          </div>
+          <div class="accordion-body"><div class="accordion-inner">
+            <div class="rule-card rule-conduct">
+              <div class="rule-phrase">WHEN TO USE CONDUCT:
+
+                Use CONDUCT + [activity name] when:
+                ✓ No ATP-112 task verb describes the tactical effect
+                ✓ The operation is non-kinetic (info ops, CIMIC, etc.)
+                ✓ The operation is a specialized activity (SAR, EOD)
+                ✓ The activity combines multiple tactical effects
+                without a single covering verb
+
+                CORRECT USAGE:
+                • CONDUCT INFO OPS — no NATO verb for information ops
+                • CONDUCT SAR — specialized search and rescue
+                • CONDUCT CIMIC TASKS — civil-military cooperation
+                • CONDUCT CORDON — combines CONTAIN + SCREEN
+                • CONDUCT RECONNAISSANCE — broader than LOCATE/SCREEN
+
+                INCORRECT USAGE:
+                ✗ CONDUCT SEIZURE — SEIZE exists as a NATO verb
+                ✗ CONDUCT DESTRUCTION — DESTROY exists
+                ✗ CONDUCT ATTACK — ATTACK exists
+                ✗ CONDUCT DEFENCE — DEFEND exists (though less common)
+
+                ——————————————————————————————
+                RULE OF THUMB:
+                If an ATP-112 verb exists → use it.
+                If no ATP-112 verb exists → CONDUCT + activity.
+                Never use CONDUCT as a "lazy" substitute
+                for a verb you can't remember.</div>
+              <div class="rule-type">CONDUCT + Activity — ATP-112 Supplementary Guidance</div>
+              <div class="rule-note">CONDUCT is not a shortcut. Using CONDUCT when a NATO verb exists signals to the examiner that you do not know the correct ATP-112 verb. Reserve CONDUCT for operations that genuinely lack a NATO task verb.</div>
+            </div>
+
+            <div class="cat-title" style="margin-top:1.5rem;"><span class="badge badge-purple">Common Errors</span> Before &amp; After — Mission Statement Corrections</div>
+
+            <div class="compare-grid">
+              <div class="compare-before">
+                <div class="compare-label label-before">✗ Direct translation from Spanish — wrong verb</div>
+                <div class="compare-text">"B Coy is to TAKE Eagle Bridge to prevent enemy escape."
+                  <br><small style="color:#a32d2d;">"Take" is not an ATP-112 task verb. The tactical effect is SEIZE (take by force).</small></div>
+              </div>
+              <div class="compare-after">
+                <div class="compare-label label-after">✓ Correct — ATP-112 verb based on effect</div>
+                <div class="compare-text">"B COY is to SEIZE EAGLE BRIDGE IOT prevent En escape."
+                  <br><small style="color:#27500a;">SEIZE = take possession by force. Correct NATO verb.</small></div>
+              </div>
+            </div>
+
+            <div class="compare-grid">
+              <div class="compare-before">
+                <div class="compare-label label-before">✗ Wrong effect — temporary action, permanent verb</div>
+                <div class="compare-text">"Fire support is to DESTROY En artillery for the duration of the assault."
+                  <br><small style="color:#a32d2d;">DESTROY = permanent. The intent is temporary (duration of assault).</small></div>
+              </div>
+              <div class="compare-after">
+                <div class="compare-label label-after">✓ Correct — temporary effect = NEUTRALIZE</div>
+                <div class="compare-text">"Fire support is to NEUTRALIZE En artillery for the duration of the assault."
+                  <br><small style="color:#27500a;">NEUTRALIZE = temporarily incapable. Matches the tactical effect.</small></div>
+              </div>
+            </div>
+
+            <div class="compare-grid">
+              <div class="compare-before">
+                <div class="compare-label label-before">✗ Using CONDUCT when NATO verb exists</div>
+                <div class="compare-text">"A Coy is to CONDUCT SEIZURE of Objective Hawk IOT allow FF advance."
+                  <br><small style="color:#a32d2d;">SEIZE is a valid ATP-112 verb. CONDUCT is unnecessary and incorrect.</small></div>
+              </div>
+              <div class="compare-after">
+                <div class="compare-label label-after">✓ Correct — direct NATO verb</div>
+                <div class="compare-text">"A COY is to SEIZE OBJECTIVE HAWK IOT allow FF advance."
+                  <br><small style="color:#27500a;">Clean, precise, and doctrinally correct.</small></div>
+              </div>
+            </div>
+
+            <div class="compare-grid">
+              <div class="compare-before">
+                <div class="compare-label label-before">✗ Two tasks in one mission statement</div>
+                <div class="compare-text">"C Coy is to SEIZE the bridge and HOLD it against counter-attack."
+                  <br><small style="color:#a32d2d;">One mission = one task verb. HOLD belongs in Execution as a BPT task.</small></div>
+              </div>
+              <div class="compare-after">
+                <div class="compare-label label-after">✓ Correct — one task; second in Execution</div>
+                <div class="compare-text">"C COY is to SEIZE THE BRIDGE IOT deny En crossing.
+                  <br>[In Execution: On SEIZING THE BRIDGE, C COY is to CONSOLIDATE and BPT HOLD against counter-attack.]"</div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-footer">
+            <span style="font-size:0.75rem; color:var(--on-surface-variant); text-transform:uppercase;">Mark section verified:</span>
+            <input type="checkbox" class="know-cb" id="fmt-g4-cb" onchange="toggleItem('fmt-g4', this.checked)">
+          </div></div>
+        </div>
+
+        </div><!-- /tab-formats -->
+
+      </section><!-- /study-section -->
+
+      <!-- ── PRACTICE SECTION ───────────────────────── -->
+      <section id="practice-section" class="content-section"
+               role="tabpanel" aria-labelledby="practice-mode-btn">
+
+        <!-- Hero banner -->
+        <div class="practice-hero glass-card">
+          <div class="practice-hero-icon"><i class="fas fa-satellite-dish"></i></div>
+          <div class="practice-hero-text">
+            <h2>Audio/Vocal Interrogation</h2>
+            <p>Select an intelligence subset, listen to the transmission, then record your response. Exact operational phrasing is required.</p>
+          </div>
+        </div>
+
+        <!-- Section Filter -->
+        <div class="practice-filter-bar" role="group" aria-label="Practice section filter">
+          <button class="pfilter-btn active" data-pfilter="vocab" id="pfilter-vocab">
+            <i class="fas fa-database"></i> Vocabulary
+          </button>
+          <button class="pfilter-btn" data-pfilter="func" id="pfilter-func">
+            <i class="fas fa-walkie-talkie"></i> Functions
+          </button>
+          <button class="pfilter-btn" data-pfilter="sim" id="pfilter-sim">
+            <i class="fas fa-map"></i> Tactics
+          </button>
+        </div>
+
+        <!-- Microphone enable gate -->
+        <div id="mic-notice" class="mic-notice glass-card">
+          <div class="mic-icon-wrap"><i class="fas fa-microphone-slash"></i></div>
+          <h3>COMMUNICATIONS OFFLINE</h3>
+          <p>Local microphone access is required to transmit in this section.</p>
+          <button id="enable-mic-btn" class="btn btn-primary btn-lg" style="margin-top: 15px;">
+            <i class="fas fa-microphone"></i> Initialize Uplink
+          </button>
+        </div>
+
+        <!-- Practice Cards & Area -->
+        <div id="practice-cards" class="practice-grid hidden" aria-live="polite"></div>
+        <div id="practice-area" class="hidden" aria-live="polite"></div>
+
+      </section>
+
+    </main>
+  </div><!-- /app-shell -->
+
+  <!-- ═══ FLOATING PROGRESS WIDGET ═════════════════ -->
+  <div class="progress-widget" role="status" aria-live="polite" aria-label="Overall progress">
+    <div class="widget-header">
+      <span class="widget-title">MISSION PROGRESS</span>
+      <span id="progress-pct">0%</span>
+    </div>
+    <div class="segmented-bar" id="hud-progress-bar">
+      <!-- Segments injected by JS -->
+    </div>
+    <div style="font-size: 0.7rem; color: var(--on-surface-variant); text-transform: uppercase; margin-top: 4px;" id="pbar-label">0% COMPLETED</div>
+  </div>
+
+  <!-- ═══ STATS MODAL ═══════════════════════════════ -->
+  <div id="stats-modal" class="modal-overlay hidden"
+       role="dialog" aria-modal="true" aria-labelledby="stats-title">
+    <div class="modal-box glass-card">
+      <div class="modal-head">
+        <h2 id="stats-title"><i class="fas fa-server"></i> Intelligence Report</h2>
+        <button id="close-stats-btn" class="btn-close" aria-label="Close statistics">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-cell">
+          <div class="stat-num" id="stat-known">0</div>
+          <div class="stat-lbl">Data Points Verified</div>
+        </div>
+        <div class="stat-cell">
+          <div class="stat-num" id="stat-practiced">0</div>
+          <div class="stat-lbl">Transmissions Mastered</div>
+        </div>
+        <div class="stat-cell">
+          <div class="stat-num" id="stat-rate">0%</div>
+          <div class="stat-lbl">Completion Rate</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js?v=1778388757"></script>
+</body>
+</html>
