@@ -542,13 +542,7 @@ function resetUnit(k, bId, lId) {
 // Initial load
 document.addEventListener('DOMContentLoaded', () => {
   refreshAllProgress();
-  // Register service worker for offline support
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('./service-worker.js')
-      .then(reg => console.log('[SW] Registered:', reg.scope))
-      .catch(err => console.warn('[SW] Registration failed:', err));
-  }
-  // Initialize scrollspy
+    // Initialize scrollspy
   initScrollspy();
   // Mobile menu toggle
   initMobileMenu();
