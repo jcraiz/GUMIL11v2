@@ -29,31 +29,31 @@ const ASSETS = [
   './content/unit01/unit1_modal.html',
   
   // Unit 02 core files
-  './content/unit02/index.html',
+  './content/unit02/',
   './content/unit02/script.js',
   './content/unit02/style.css',
   './content/unit02/audio/README.md',
   
   // Unit 03 core files
-  './content/unit03/index.html',
+  './content/unit03/',
   './content/unit03/script.js',
   './content/unit03/style.css',
   './content/unit03/audio/README.md',
   
   // Unit 04 core files
-  './content/unit04/index.html',
+  './content/unit04/',
   './content/unit04/script.js',
   './content/unit04/style.css',
   './content/unit04/audio/README.md',
   
   // Unit 05 core files
-  './content/unit05/index.html',
+  './content/unit05/',
   './content/unit05/script.js',
   './content/unit05/style.css',
   './content/unit05/audio/README.md',
   
   // Unit 06 core files
-  './content/unit06/index.html',
+  './content/unit06/',
   './content/unit06/script.js',
   './content/unit06/style.css',
   './content/unit06/audio/README.md',
@@ -63,11 +63,11 @@ const ASSETS = [
   
   // PDF resources in extras (CRITICAL FOR OFFLINE USE)
   './content/extras/glossary/AAP-06_2019_EF.pdf',
-  './content/extras/glossary/index.html',
+  './content/extras/glossary/',
   './content/extras/mapreading/US-Army-Map-Reading-and-Land-Navigation.pdf',
-  './content/extras/mapreading/index.html',
+  './content/extras/mapreading/',
   './content/extras/selfstudyguide/Military-English-Guide-Version-1.4-March-2025.pdf',
-  './content/extras/selfstudyguide/index.html'
+  './content/extras/selfstudyguide/'
 ];
 
 self.addEventListener('install', e => {
