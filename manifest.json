@@ -2,7 +2,7 @@
   "name": "Get Underway | Military Level 11",
   "short_name": "Get Underway",
   "description": "Maritime/Military English learning platform for the Colombian Navy - Military Level 11.",
-  "start_url": "./index.html",
+  "start_url": "./",
   "display": "standalone",
   "background_color": "#131313",
   "theme_color": "#1a2517",
