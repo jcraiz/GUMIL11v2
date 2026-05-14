@@ -1,4 +1,4 @@
-const CACHE_NAME = 'gu-military-l11-v2';
+const CACHE_NAME = 'gu-military-l11-v4';
 const ASSETS = [
   // Base assets
   './',
