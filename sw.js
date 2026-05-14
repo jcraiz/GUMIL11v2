@@ -1,4 +1,4 @@
-const CACHE_NAME = 'gu-military-l11-v1';
+const CACHE_NAME = 'gu-military-l11-v2';
 const ASSETS = [
   // Base assets
   './',
@@ -108,13 +108,28 @@ self.addEventListener('fetch', e => {
   if (e.request.method !== 'GET' || url.origin !== location.origin) return;
 
   e.respondWith(
-    caches.match(e.request).then(res => {
-      return res || fetch(e.request).then(fRes => {
+    // Added ignoreSearch: true so cache matches even if a file has ?v=123 attached to it
+    caches.match(e.request, { ignoreSearch: true }).then(res => {
+      // 1. Return the file from the cache if we have it
+      if (res) return res; 
+
+      // 2. If not in cache, try fetching from the network
+      return fetch(e.request).then(fRes => {
         return caches.open(CACHE_NAME).then(c => {
           c.put(e.request, fRes.clone());
           return fRes;
         });
-      }).catch(() => caches.match('./index.html'));
+      }).catch(err => {
+        // 3. OFFLINE FALLBACK LOGIC
+        // ONLY return index.html if the browser was trying to load a full webpage
+        if (e.request.mode === 'navigate' || e.request.destination === 'document') {
+          return caches.match('./index.html', { ignoreSearch: true });
+        }
+        
+        // If it was looking for a script, image, or JSON, let it fail normally 
+        // so it doesn't crash the JavaScript engine with unexpected HTML.
+        throw err;
+      });
     })
   );
 });
