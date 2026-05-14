@@ -480,6 +480,7 @@ function openModal(url) {
   modal.addEventListener('click', closeOnOutside);
   modal.dataset.escapeHandler = 'true';
 }
+
 function closeModal() {
   const modal = document.getElementById('contentModal');
   if (modal.style.display !== 'block') return;
@@ -497,15 +498,15 @@ function closeModal() {
     document.getElementById(lastFocusedId)?.focus();
   }
   // Refresh progress after modal close
-  if (typeof progressManager !== 'undefined' && typeof UNIT_DATA !== 'undefined') {
-    progressManager.refreshAllProgress(UNIT_DATA);
-  } else {
-    refreshAllProgress();
+  if (typeof window.refreshAllProgress === 'function') {
+    window.refreshAllProgress();
   }
 }
+
 function closeOnOutside(e) {
   if (e.target.id === 'contentModal') closeModal();
 }
+
 // Global escape key handler
 window.addEventListener('keydown', function(e) {
   if (e.key === 'Escape') {
@@ -516,7 +517,8 @@ window.addEventListener('keydown', function(e) {
     }
   }
 });
-// ── Progress Management ──
+
+// ── Progress Management Data ──
 const UNIT_DATA = [
   { storageKey:'military_l11_u1_known', total:104, barId:'upbar-1', lblId:'upbar-lbl-1' },
   { storageKey:'military_l11_u2_known', total:87, barId:'upbar-2', lblId:'upbar-lbl-2' },
@@ -525,30 +527,33 @@ const UNIT_DATA = [
   { storageKey:'military_l11_u5_known', total:37, barId:'upbar-5', lblId:'upbar-lbl-5' },
   { storageKey:'military_l11_u6_known', total:32, barId:'upbar-6', lblId:'upbar-lbl-6' }
 ];
-// Initialize ProgressManager with Level 11 config
-const progressManager = new ProgressManager({ level: 11, prerequisiteLevel: 10 });
-// Enhanced progress calculation with error handling
-function calcProgress(k, t) {
-  return progressManager.getUnitProgress(k, t).percentage;
-}
-// Refresh all progress indicators
-function refreshAllProgress() {
-  progressManager.refreshAllProgress(UNIT_DATA);
-}
-// Reset unit progress with confirmation
-function resetUnit(k, bId, lId) {
-  return progressManager.resetUnitProgress(k, bId, lId);
-}
-// Initial load
+
+// Globally accessible function for progress refreshing
+window.refreshAllProgress = function() {
+  if (window.progressManager) {
+    window.progressManager.refreshAllProgress(UNIT_DATA);
+  }
+};
+
+// Globally accessible function for HTML onclick reset buttons
+window.resetUnit = function(k, bId, lId) {
+  if (window.progressManager) {
+    window.progressManager.resetUnitProgress(k, bId, lId);
+    window.refreshAllProgress();
+  }
+};
+
+// UI Initialization
 document.addEventListener('DOMContentLoaded', () => {
-  refreshAllProgress();
-  // Initialize scrollspy
   initScrollspy();
-  // Mobile menu toggle
   initMobileMenu();
 });
+
 // Refresh on window focus (tab switch)
-window.addEventListener('focus', refreshAllProgress);
+window.addEventListener('focus', () => {
+  if (typeof window.refreshAllProgress === 'function') window.refreshAllProgress();
+});
+
 // ── Scrollspy Navigation ──
 function initScrollspy() {
   const navLinks = document.querySelectorAll('#main-nav .nav-link');
@@ -568,7 +573,6 @@ function initScrollspy() {
       a.setAttribute('aria-current', isActive ? 'page' : 'false');
     });
   }
-  // Throttled scroll handler for performance
   let ticking = false;
   window.addEventListener('scroll', () => {
     if (!ticking) {
@@ -581,6 +585,7 @@ function initScrollspy() {
   }, { passive: true });
   updateNav();
 }
+
 // ── Mobile Menu Toggle ──
 function initMobileMenu() {
   const toggleBtn = document.querySelector('[aria-controls="mobile-menu"]');
@@ -591,7 +596,6 @@ function initMobileMenu() {
       toggleBtn.setAttribute('aria-expanded', (!isExpanded).toString());
       mobileMenu.classList.toggle('hidden');
     });
-    // Close menu when clicking a link
     mobileMenu.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         mobileMenu.classList.add('hidden');
@@ -600,12 +604,41 @@ function initMobileMenu() {
     });
   }
 }
+
 // ── Image Error Handling Enhancement ──
 document.addEventListener('error', (e) => {
   if (e.target.tagName === 'IMG' && e.target.classList.contains('unit-img')) {
     e.target.classList.add('failed');
   }
 }, { capture: true, passive: true });
+</script>
+
+<!-- Module Script (API & Progress Management) -->
+<script type="module">
+import { APIClient } from './lib/api-client.js';
+import { ProgressManager } from './scripts/progress-manager.js';
+
+try {
+  // Initialize APIs safely
+  const apiClient = new APIClient({ baseUrl: window.location.origin + '/api', timeout: 8000 });
+  const progressManager = new ProgressManager({ 
+    level: 11, 
+    prerequisiteLevel: 10,
+    apiClient: apiClient,
+    userId: localStorage.getItem('military_user_id') || crypto.randomUUID?.().slice(0, 12) || 'u_' + Math.random().toString(36).slice(2, 10)
+  });
+  
+  localStorage.setItem('military_user_id', progressManager.userId);
+  
+  // Expose instances to the window so global script functions can access them
+  window.apiClient = apiClient;
+  window.progressManager = progressManager;
+
+  // Run initial progress load
+  window.refreshAllProgress();
+} catch (error) {
+  console.error("[App] Failed to initialize modules:", error);
+}
 </script>
 </body>
 </html>
