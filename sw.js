@@ -2,7 +2,6 @@ const CACHE_NAME = 'gu-military-l11-v4';
 const ASSETS = [
   // Base assets
   './',
-  './index.html',
   './manifest.json',
   './styles/enhancements.css',
   './content/assets/icon-192.png',
@@ -123,7 +122,7 @@ self.addEventListener('fetch', e => {
         // 3. OFFLINE FALLBACK LOGIC
         // ONLY return index.html if the browser was trying to load a full webpage
         if (e.request.mode === 'navigate' || e.request.destination === 'document') {
-          return caches.match('./index.html', { ignoreSearch: true });
+          return caches.match('./', { ignoreSearch: true });
         }
         
         // If it was looking for a script, image, or JSON, let it fail normally 
