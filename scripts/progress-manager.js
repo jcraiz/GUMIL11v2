@@ -5,7 +5,7 @@
  * Consistent with Level 12 architecture
  */
 
-class ProgressManager {
+export class ProgressManager {
   constructor(config = {}) {
     this.apiEndpoint = config.apiEndpoint || '/api/progress';
     this.userId = config.userId || this._generateUserId();
@@ -391,11 +391,4 @@ class ProgressManager {
       return false;
     }
   }
-}
-
-// Export for module systems or global scope
-if (typeof module !== 'undefined' && module.exports) {
-  module.exports = ProgressManager;
-} else {
-  window.ProgressManager = ProgressManager;
 }
