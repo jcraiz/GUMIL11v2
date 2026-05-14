@@ -25,38 +25,33 @@ const ASSETS = [
   './content/unit01/index.html',
   './content/unit01/script.js',
   './content/unit01/style.css',
-  './content/unit01/audio/README.md',
   './content/unit01/unit1_modal.html',
   
   // Unit 02 core files
   './content/unit02/',
   './content/unit02/script.js',
   './content/unit02/style.css',
-  './content/unit02/audio/README.md',
-  
+    
   // Unit 03 core files
   './content/unit03/',
   './content/unit03/script.js',
   './content/unit03/style.css',
-  './content/unit03/audio/README.md',
-  
+    
   // Unit 04 core files
   './content/unit04/',
   './content/unit04/script.js',
   './content/unit04/style.css',
-  './content/unit04/audio/README.md',
-  
+    
   // Unit 05 core files
   './content/unit05/',
   './content/unit05/script.js',
   './content/unit05/style.css',
-  './content/unit05/audio/README.md',
-  
+    
   // Unit 06 core files
   './content/unit06/',
   './content/unit06/script.js',
   './content/unit06/style.css',
-  './content/unit06/audio/README.md',
+  
   // Unit 06 assets
   './content/unit06/assets/officers.webp',
   './content/unit06/assets/petty_subofficers.webp',
