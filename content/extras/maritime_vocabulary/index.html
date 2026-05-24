@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
+  <meta name="description" content="Get Underway | Maritime English Level 11 - Maritime Vocabulary reference Flipbook."/>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Basic Maritime Vocabulary Flipbook | Maritime English Level 11</title>
+    
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    
+    <!-- DearFlip Flipbook CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/@dearhive/dearflip-jquery-flipbook@1.7.3/dflip/css/dflip.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@dearhive/dearflip-jquery-flipbook@1.7.3/dflip/css/themify-icons.min.css" rel="stylesheet">
+    
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface": "#131313", "surface-container-highest": "#353534", "primary": "#aec7f6",
+                        "inverse-on-surface": "#313030", "on-tertiary-fixed-variant": "#574500", "tertiary-fixed-dim": "#e9c349",
+                        "primary-fixed-dim": "#aec7f6", "surface-tint": "#aec7f6", "tertiary-container": "#cca830",
+                        "secondary-fixed-dim": "#c8c6c6", "on-surface": "#e5e2e1", "on-error-container": "#ffdad6",
+                        "secondary-fixed": "#e4e2e1", "surface-bright": "#393939", "on-primary-container": "#708ab5",
+                        "surface-dim": "#131313", "outline-variant": "#44474e", "error-container": "#93000a",
+                        "on-secondary-container": "#b6b5b4", "tertiary": "#eac34a", "on-primary-fixed": "#001b3d",
+                        "on-secondary-fixed-variant": "#474747", "on-primary-fixed-variant": "#2d476f",
+                        "surface-container-lowest": "#0e0e0e", "background": "#131313", "surface-variant": "#353534",
+                        "on-surface-variant": "#c4c6cf", "outline": "#8e9099", "secondary-container": "#474747",
+                        "primary-container": "#002147", "on-background": "#e5e2e1", "on-primary": "#143057",
+                        "surface-container-high": "#2a2a2a", "error": "#ffb4ab", "secondary": "#c8c6c6",
+                        "on-secondary-fixed": "#1b1c1c", "on-secondary": "#303030", "on-error": "#690005",
+                        "tertiary-fixed": "#ffe088", "on-tertiary": "#3c2f00", "on-tertiary-container": "#4f3e00",
+                        "inverse-primary": "#465f88", "surface-container-low": "#1c1b1b", "inverse-surface": "#e5e2e1",
+                        "surface-container": "#201f1f", "primary-fixed": "#d6e3ff", "on-tertiary-fixed": "#241a00"
+                    },
+                    fontFamily: { "headline": ["Space Grotesk"], "body": ["Inter"], "label": ["Inter"] }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; background-color: #131313; }
+        
+        /* Customize DearFlip UI */
+        .df-ui-bg { background-color: #131313 !important; }
+        .df-ui-wrapper { color: #e5e2e1 !important; }
+        .df-ui-btn { color: #e5e2e1 !important; border-radius: 0.25rem !important; margin: 2px !important; }
+        .df-ui-btn:hover { background-color: #353534 !important; color: #aec7f6 !important; }
+        .df-icon-play:before { content: "\e62e" !important; }
+        
+        .header-bar {
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 60px;
+            background: rgba(0, 33, 71, 0.4);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(174, 199, 246, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 24px;
+            z-index: 100;
+        }
+
+        #flipbook-container {
+            position: absolute;
+            top: 60px; left: 0; right: 0; bottom: 0;
+        }
+    </style>
+
+  <style>
+    .skip-link {
+      position: absolute;
+      top: -100px;
+      left: 0;
+      background: #002147;
+      color: #ffffff;
+      padding: 10px 20px;
+      z-index: 99999;
+      font-weight: bold;
+      text-decoration: none;
+      transition: top 0.2s ease;
+      border: 1px solid #aec7f6;
+    }
+    .skip-link:focus {
+      top: 0;
+    }
+  </style>
+            </head>
+<body class="bg-background text-on-surface font-body">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <div class="header-bar">
+        <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-tertiary text-2xl">menu_book</span>
+            <div>
+                <h1 class="font-headline font-bold text-lg leading-tight">Basic Maritime Vocabulary</h1>
+            </div>
+        </div>
+        <div class="flex items-center gap-3 bg-surface-container-highest px-4 py-2 rounded-lg border border-white/5 shadow-inner">
+            <label for="jump-page" class="text-xs font-bold text-on-surface-variant uppercase tracking-wider">Jump to Page:</label>
+            <div class="flex items-center gap-2">
+                <input type="number" id="jump-page" min="1" class="w-16 bg-surface-dim border border-white/10 rounded px-2 py-1 text-sm text-white focus:outline-none focus:border-tertiary" placeholder="#">
+                <span class="text-xs text-on-surface-variant font-medium">of <span id="total-pages">...</span></span>
+            </div>
+            <button onclick="jumpToPage()" class="bg-tertiary text-on-tertiary px-3 py-1 rounded text-xs font-bold hover:bg-tertiary-fixed transition-colors shadow-md hover:shadow-lg">GO</button>
+        </div>
+    </div>
+
+    <main id="main-content" class="h-full">
+<div id="flipbook-container">
+        <!-- DearFlip element -->
+        <div class="_df_book" 
+             id="maritime-vocabulary-book" 
+             source="01_basic-maritime-vocabulary.pdf" 
+             backgroundColor="#131313" 
+             paddingTop="40" 
+             paddingBottom="40"
+             paddingRight="40"
+             paddingLeft="40">
+        </div>
+</main>
+    </div>
+
+    <!-- jQuery & DearFlip JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"  defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@dearhive/dearflip-jquery-flipbook@1.7.3/dflip/js/dflip.min.js"  defer></script>
+    
+    <script>
+        // Custom configuration for DearFlip
+        var dFlipLocation = "https://cdn.jsdelivr.net/npm/@dearhive/dearflip-jquery-flipbook@1.7.3/dflip/";
+        
+        DFLIP.defaults.cssPrefix = dFlipLocation + "css/";
+        DFLIP.defaults.jsPrefix = dFlipLocation + "js/";
+        
+        DFLIP.defaults.ui = {
+            toolbar: {
+                layout: "prev,pageNumber,next,zoomIn,zoomOut,fullScreen,download,thumbnails,outline,more",
+            }
+        };
+
+        function jumpToPage() {
+            var pageNum = parseInt(document.getElementById('jump-page').value, 10);
+            var flipbook = window['maritime-vocabulary-book'];
+            if (flipbook && typeof flipbook.gotoPage === 'function' && pageNum > 0) {
+                flipbook.gotoPage(pageNum);
+            }
+        }
+
+        // Poll for flipbook load to set total pages
+        var checkFlipbook = setInterval(function() {
+            var flipbook = window['maritime-vocabulary-book'];
+            if (flipbook && flipbook.contentProvider && flipbook.contentProvider.pageCount) {
+                document.getElementById('total-pages').textContent = flipbook.contentProvider.pageCount;
+                clearInterval(checkFlipbook);
+            }
+        }, 500);
+    </script>
+</body>
+</html>
